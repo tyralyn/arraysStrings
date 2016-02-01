@@ -19,7 +19,7 @@ def isUniqueDict(s):
 
 def isUniqueNoDataStructures(s):
 	for i in range (0, len(s)):
-		if s[i] in s[:i] or s[i] in s[i+1:]:
+		if s[i] in s[i+1:]:
 			return False
 	return True
 
